@@ -1,6 +1,6 @@
-from models import admin, assets, requests, employee
-from app import bcrypt, app
-from models.databaseconfig import db
+from .models import admin, assets, requests, employee
+from .app import bcrypt, app
+from .models.databaseconfig import db
 
 
 with app.app_context():

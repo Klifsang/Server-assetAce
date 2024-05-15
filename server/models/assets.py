@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy_serializer import SerializerMixin
-from app import db
+from ..app import db
 
 class Assets(db.Model, SerializerMixin):
     __tablename__ = 'assets'

@@ -4,14 +4,14 @@ from functools import wraps
 from flask_cors import CORS
 from flask_migrate import Migrate
 from flask_session import Session
-from config import ApplicationConfig
-from models.databaseconfig import db
+from .config import ApplicationConfig
+from .models.databaseconfig import db
 from flask_bcrypt import Bcrypt
-from endpoints.employee_api import delete_employee, patch_employee, register_employee, get_employees
-from endpoints.admin_api import delete_admin, patch_admin, register_admin, get_admins
-from endpoints.assets_api import add_assets, delete_assets, patch_assets, get_assets
-from endpoints.requests_api import add_requests, patch_requests, delete_requests, get_requests
-from endpoints.auth_api import get_current_user, login, logout
+from .endpoints.employee_api import delete_employee, patch_employee, register_employee, get_employees
+from .endpoints.admin_api import delete_admin, patch_admin, register_admin, get_admins
+from .endpoints.assets_api import add_assets, delete_assets, patch_assets, get_assets
+from .endpoints.requests_api import add_requests, patch_requests, delete_requests, get_requests
+from .endpoints.auth_api import get_current_user, login, logout
 import os
 
 app = Flask(
